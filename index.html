@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <style>
-        /* Reset CSS */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Styling Header */
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Styling Sections */
-        section {
-            margin: 20px;
-        }
-
-        .about, .projects, .contact {
-            border: 1px solid #ddd;
-            padding: 20px;
-        }
-
-        /* Styling Footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <!-- Tambahkan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tambahkan file CSS kustom Anda (style.css) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portofolio Saya</h1>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Selamat Datang di Portofolio Saya</h1>
     </header>
 
-    <section class="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang pengembang web yang berpengalaman dengan kemampuan dalam HTML, CSS, dan JavaScript.</p>
-    </section>
-
-    <section class="projects">
-        <h2>Proyek Saya</h2>
-        <div class="project">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi singkat tentang Proyek 1.</p>
-        </div>
-        <div class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat tentang Proyek 2.</p>
+    <!-- Section tentang saya -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tentang Saya</h2>
+                <p>Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="profile.jpg" alt="Foto Profil" class="img-fluid rounded-circle">
+            </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Kontak</h2>
-        <p>Email: example@email.com</p>
-        <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+    <!-- Section portofolio -->
+    <section class="container mt-5">
+        <h2>Portofolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyek 1</h5>
+                        <p class="card-text">Deskripsi proyek 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyek 2</h5>
+                        <p class="card-text">Deskripsi proyek 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyek 3</h5>
+                        <p class="card-text">Deskripsi proyek 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Portofolio Saya</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2023 Nama Anda
     </footer>
+
+    <!-- Tambahkan Bootstrap JS dan jQuery (opsional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
